@@ -12,12 +12,68 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 50px;
 }
 
-#cityDiv {
-    background-color: white;
-    padding: 10px;
+#mainData {
+    backdrop-filter: blur(1px) saturate(200%);
+    -webkit-backdrop-filter: blur(1px) saturate(200%);
+    background-color: rgba(255, 255, 255, 0.56);
+    border-radius: 12px 12px 0 0;
+    border: 1px solid rgba(209, 213, 219, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 30px 50px 10px 50px;
+}
+
+#errorData {
+    backdrop-filter: blur(1px) saturate(200%);
+    -webkit-backdrop-filter: blur(1px) saturate(200%);
+    background-color: rgba(255, 255, 255, 0.56);
+    border-radius: 12px;
+    border: 1px solid rgba(209, 213, 219, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 50px 30px 50px;
+    font-size: 2rem;
+}
+
+#cityDiv p {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0px;
+    margin: 0px
+}
+
+#cityName {
+    font-size: 2rem;
+    font-weight: lighter;
+}
+
+#temp {
+    font-size: 4vw;
+    font-weight: lighter;
+}
+
+#weat {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(88, 88, 88);
+    font-size: 1.8rem;
+    font-weight: lighter;
+}
+
+#additionalData {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    padding: 15px;
+    border-radius: 0 0 12px 12px;
 }
 
 #inputDiv {
@@ -26,6 +82,7 @@ body {
     width: 100%;
     gap: 10px;
 }
+
 
 #searchDiv {
     height: 50px;
