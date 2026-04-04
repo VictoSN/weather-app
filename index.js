@@ -61,8 +61,8 @@ function renderWeather(weatherData) {
             <p id="weat">${weather}</p>
         </div>
         <div id="additionalData">
-            <text id="humid">H: ${humidity}%</text>
-            <text id="humid">P: ${pressure} hPa</text>
+            <span id="humid">H: ${humidity}%</span>
+            <span id="humid">P: ${pressure} hPa</span>
         </div>
     `
 }
