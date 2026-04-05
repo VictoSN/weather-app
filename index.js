@@ -18,7 +18,7 @@ async function fetchWeather() {
 
     // Fetch the geolocation data of the key for latitude and longitude
     const cityRes = await fetch(`/api/weather?city=${citySearched}&units=${units}`);
-    const cityData = await res.json();
+    const cityData = await cityRes.json();
     
     if (cityData.error) {
         cityDiv.insertAdjacentHTML("beforeend", `<div id="errorData">Please Enter a Valid City</div>`);
