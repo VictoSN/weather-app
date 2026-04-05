@@ -6,7 +6,7 @@ export default async function handler(req, res) {
     try {
         // Get lat & lon
         const geoRes = await fetch(
-            `http://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=1&appid=${API_KEY}`
+            `https://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=1&appid=${API_KEY}`
         );
         const geoData = await geoRes.json();
 
@@ -17,9 +17,9 @@ export default async function handler(req, res) {
 
         // Get weather data
         const weatherRes = await fetch(
-            `http://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&units=${units}&lang=en&appid=${API_KEY}`
+            `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&units=${units}&lang=en&appid=${API_KEY}`
         );
-        const weatherData = await response.json();
+        const weatherData = await weatherRes.json();
         res.status(200).json(weatherData);
     } catch (err) {
         res.status(500).json({ error: "Server Error" });
