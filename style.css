@@ -2,7 +2,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: 100dvh;
     margin: 0;
 }
 
@@ -134,4 +134,10 @@ body {
     width: fit-content;
     padding: 5px 10px 5px 5px;
     border-radius: 10px;
+}
+
+@media (max-width: 1000px) {
+    #inputDiv {
+        width: 85%;
+    }
 }
